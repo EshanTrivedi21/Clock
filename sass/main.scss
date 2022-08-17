@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@import "sass/analog_clock.scss";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background-color: bisque;
+    background-image: linear-gradient(to right,#d64c7f,#ee4758);
 }
 
 .title {
@@ -18,12 +22,9 @@ body {
 
 .heading {
     font-size: 2.5rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .caption{
     font-size: 1.5rem;
     transform: translateY(30%);
-    font-family: 'Poppins', sans-serif;
 }
-

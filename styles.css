@@ -1,11 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+:root {
+  --rotation: 0deg; }
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  border: 7.5px solid rgba(0, 0, 0, 0.85);
+  position: relative;
+  margin-left: 50%;
+  margin-top: 10vh;
+  transform: translateX(-50%); }
+  .clock--number {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+    transform: rotate(var(--rotation)); }
+    .clock--number-1 {
+      --rotation: 30deg; }
+    .clock--number-2 {
+      --rotation: 60deg; }
+    .clock--number-3 {
+      --rotation: 90deg; }
+    .clock--number-4 {
+      --rotation: 120deg; }
+    .clock--number-5 {
+      --rotation: 150deg; }
+    .clock--number-6 {
+      --rotation: 180deg; }
+    .clock--number-7 {
+      --rotation: 210deg; }
+    .clock--number-8 {
+      --rotation: 2400deg; }
+    .clock--number-9 {
+      --rotation: 270deg; }
+    .clock--number-10 {
+      --rotation: 300deg; }
+    .clock--number-11 {
+      --rotation: 330deg; }
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
 
 body {
-  background-color: bisque; }
+  background-image: linear-gradient(to right, #d64c7f, #ee4758); }
 
 .title {
   display: flex;
@@ -14,10 +61,8 @@ body {
   margin: 1.5rem; }
 
 .heading {
-  font-size: 2.5rem;
-  font-family: 'Poppins', sans-serif; }
+  font-size: 2.5rem; }
 
 .caption {
   font-size: 1.5rem;
-  transform: translateY(30%);
-  font-family: 'Poppins', sans-serif; }
+  transform: translateY(30%); }
