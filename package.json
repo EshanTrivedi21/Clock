@@ -1,0 +1,23 @@
+{
+  "name": "the_clock",
+  "version": "1.0.0",
+  "description": "A simple Modern-Day Clock",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss styles.css -wnpm ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EshanTrivedi21/Clock.git"
+  },
+  "author": "Eshan Trivedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EshanTrivedi21/Clock/issues"
+  },
+  "homepage": "https://github.com/EshanTrivedi21/Clock#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
