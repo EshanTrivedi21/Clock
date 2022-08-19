@@ -1,16 +1,12 @@
-:root{
-    --rotation: 0deg;
-}
-
-.clock{
-    width: 40rem;
-    height: 40rem;
-    background-color: rgba(255,255,255,0.5);
+.analog-clock{
+    width: 22.5rem;
+    height: 22.55rem;
+    background-color: #d3d98b;
     border-radius: 50%;
-    border: 7.5px solid rgba(0,0,0,0.85);
+    border: 10px solid #1e5128;
     position: relative;
     margin-left: 50%;
-    margin-top: 10vh;
+    margin-top: 7vh;
     transform: translateX(-50%);
 
     &--number {
@@ -21,7 +17,8 @@
         top: 2.5%;
         text-align: center;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.75rem;
+        color: #141414;
 
         &-1 { --rotation: 30deg;}
         &-2 { --rotation: 60deg;}
@@ -39,47 +36,43 @@
     }
 
     &--hand {
-        --rotation: 30deg;
+        --rotation: 0deg;
         position: absolute;
         bottom: 50%;
         left: 50%;
-        background-color: black;
-        border: 1.5px solid black;
+        background-color: #141414;
+        border: 1.5px solid #141414;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        transform-origin: bottom;
+        transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 
         &-hour {
-            --rotation: 30deg;
-            width: 12px;
+            width: 10px;
             height: 30%;
         }
 
         &-minute {
-            --rotation: 60deg;
-            width: 7px;
+            width: 5px;
             height: 35%;
         }
 
         &-second {
-            --rotation: 90deg;
-            width: 3px;
+            width: 1px;
             height: 37.5%;
-            border: 1.5px solid red;
-            background-color: red;
+            border: 1.5px solid #1e5128;
+            background-color: #1e5128;
         }
 
-        transform-origin: bottom;
-        transform: rotate(calc(var(--rotation) * 1deg));
-        transform: translateX(-50%);
     }
 
     &::after {
         content: '';
         position: absolute;
-        background-color: black;
+        background-color: #141414;
         z-index: 25;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

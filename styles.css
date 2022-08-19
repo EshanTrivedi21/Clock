@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-:root {
-  --rotation: 0deg; }
-
-.clock {
-  width: 40rem;
-  height: 40rem;
-  background-color: rgba(255, 255, 255, 0.5);
+.analog-clock {
+  width: 22.5rem;
+  height: 22.55rem;
+  background-color: #d3d98b;
   border-radius: 50%;
-  border: 7.5px solid rgba(0, 0, 0, 0.85);
+  border: 10px solid #1e5128;
   position: relative;
   margin-left: 50%;
-  margin-top: 10vh;
+  margin-top: 7vh;
   transform: translateX(-50%); }
-  .clock--number {
+  .analog-clock--number {
     position: absolute;
     width: 95%;
     height: 95%;
@@ -20,67 +17,81 @@
     top: 2.5%;
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    color: #141414;
     transform: rotate(var(--rotation)); }
-    .clock--number-1 {
+    .analog-clock--number-1 {
       --rotation: 30deg; }
-    .clock--number-2 {
+    .analog-clock--number-2 {
       --rotation: 60deg; }
-    .clock--number-3 {
+    .analog-clock--number-3 {
       --rotation: 90deg; }
-    .clock--number-4 {
+    .analog-clock--number-4 {
       --rotation: 120deg; }
-    .clock--number-5 {
+    .analog-clock--number-5 {
       --rotation: 150deg; }
-    .clock--number-6 {
+    .analog-clock--number-6 {
       --rotation: 180deg; }
-    .clock--number-7 {
+    .analog-clock--number-7 {
       --rotation: 210deg; }
-    .clock--number-8 {
+    .analog-clock--number-8 {
       --rotation: 2400deg; }
-    .clock--number-9 {
+    .analog-clock--number-9 {
       --rotation: 270deg; }
-    .clock--number-10 {
+    .analog-clock--number-10 {
       --rotation: 300deg; }
-    .clock--number-11 {
+    .analog-clock--number-11 {
       --rotation: 330deg; }
-  .clock--hand {
-    --rotation: 30deg;
+  .analog-clock--hand {
+    --rotation: 0deg;
     position: absolute;
     bottom: 50%;
     left: 50%;
-    background-color: black;
-    border: 1.5px solid black;
+    background-color: #141414;
+    border: 1.5px solid #141414;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     transform-origin: bottom;
-    transform: rotate(calc(var(--rotation) * 1deg));
-    transform: translateX(-50%); }
-    .clock--hand-hour {
-      --rotation: 30deg;
-      width: 12px;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg)); }
+    .analog-clock--hand-hour {
+      width: 10px;
       height: 30%; }
-    .clock--hand-minute {
-      --rotation: 60deg;
-      width: 7px;
+    .analog-clock--hand-minute {
+      width: 5px;
       height: 35%; }
-    .clock--hand-second {
-      --rotation: 90deg;
-      width: 3px;
+    .analog-clock--hand-second {
+      width: 1px;
       height: 37.5%;
-      border: 1.5px solid red;
-      background-color: red; }
-  .clock::after {
+      border: 1.5px solid #1e5128;
+      background-color: #1e5128; }
+  .analog-clock::after {
     content: '';
     position: absolute;
-    background-color: black;
+    background-color: #141414;
     z-index: 25;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%; }
+
+.digital-clock {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #d3d98b;
+  width: 350px;
+  background-color: #1e5128;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%);
+  letter-spacing: 2.5px; }
+
+.date {
+  font-size: 1.75rem;
+  letter-spacing: 0px; }
 
 * {
   margin: 0;
@@ -90,19 +101,21 @@
   overflow: hidden; }
 
 body {
-  background-image: linear-gradient(to right, #d64c7f, #ee4758); }
+  background-color: #181818; }
 
 .title {
   margin: 1.5rem; }
 
 .heading {
   display: block;
-  font-size: 3.25rem; }
+  font-size: 2.5rem;
+  color: #d3d98b; }
 
 .caption {
   display: block;
   position: absolute;
-  top: 1.8rem;
-  right: 1.5rem;
-  font-size: 2.35rem;
-  transform: translateY(15%); }
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  transform: translateY(15%);
+  color: #d3d98b; }

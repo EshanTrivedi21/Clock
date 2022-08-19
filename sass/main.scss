@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-@import "sass/analog_clock.scss";
+@import "analog_clock";
+@import "digital_clock";
+
 
 * {
     margin: 0;
@@ -11,7 +13,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right,#d64c7f,#ee4758);
+    background-color: #181818;
 }
 
 .title {
@@ -20,14 +22,16 @@ body {
 
 .heading {
     display: block;
-    font-size: 3.25rem;
+    font-size: 2.5rem;
+    color: #d3d98b;
 }
 
 .caption{
     display: block;
     position: absolute;
-    top: 1.8rem;
-    right: 1.5rem;
-    font-size: 2.35rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
     transform: translateY(15%);
+    color: #d3d98b;
 }
