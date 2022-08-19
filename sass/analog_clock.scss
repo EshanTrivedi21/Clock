@@ -1,13 +1,15 @@
 .analog-clock{
-    width: 22.5rem;
-    height: 22.55rem;
+    display: flex;
+    width: 30vw;
+    height: 30vw;
     background-color: #d3d98b;
     border-radius: 50%;
-    border: 10px solid #1e5128;
+    border: 1vw solid #1e5128;
     position: relative;
-    margin-left: 50%;
-    margin-top: 7vh;
-    transform: translateX(-50%);
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-10%);
 
     &--number {
         position: absolute;
@@ -17,7 +19,7 @@
         top: 2.5%;
         text-align: center;
         font-weight: bold;
-        font-size: 1.75rem;
+        font-size: 2vw;
         color: #141414;
 
         &-1 { --rotation: 30deg;}
@@ -48,18 +50,18 @@
         transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 
         &-hour {
-            width: 10px;
-            height: 30%;
+            width: 0.9vw;
+            height: 8vw;
         }
 
         &-minute {
-            width: 5px;
-            height: 35%;
+            width: 0.45vw;
+            height: 9.5vw;
         }
 
         &-second {
-            width: 1px;
-            height: 37.5%;
+            width: 0.1vw;
+            height: 10.5vw;
             border: 1.5px solid #1e5128;
             background-color: #1e5128;
         }
@@ -77,5 +79,70 @@
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .analog-clock {
+        width: 50vw;
+        height: 50vw;
+        border: 12.5px solid #1e5128;
+        margin-top: 3vh;
+        transform: translateX(0%);
+
+        &--number {
+            font-size: 4vw;
+        }
+
+        &--hand {
+            &-hour {
+                width: 1.25vw;
+                height: 12vw;
+            }
+    
+            &-minute {
+                width: 0.9vw;
+                height: 14.25vw;
+            }
+    
+            &-second {
+                width: 0.3vw;
+                height: 16vw;
+            }
+    
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .analog-clock {
+        width: 85vw;
+        height: 85vw;
+        border: 10px solid #1e5128;
+        margin-top: 3vh;
+        transform: translateX(0%);
+
+        &--number {
+            font-size: 6vw;
+        }
+
+        &--hand {
+            &-hour {
+                width: 2.5vw;
+                height: 24vw;
+            }
+    
+            &-minute {
+                width: 1.35vw;
+                height: 28.5vw;
+            }
+    
+            &-second {
+                width: 0.3vw;
+                height: 31.5vw;
+            }
+    
+        }
     }
 }
