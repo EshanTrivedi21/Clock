@@ -4,10 +4,15 @@
     color: #d3d98b;
     width: 30vw;
     // background-color: #1e5128;
-    padding: 7.5vw 1rem;
+    padding: 0vw 1rem;
     margin-top: 6rem;
     border-radius: 15px;
     letter-spacing: 2.5px;
+}
+
+.footer-caption{
+    margin-top: 15vw;
+    font-size: 1.75vw;
 }
 
 .date {
@@ -31,6 +36,10 @@
         margin-top: 0rem;
         font-size: 1.5rem;
     }
+
+    .footer-caption{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -45,5 +54,9 @@
     .date {
         margin-top: 0rem;
         font-size: 1.25rem;
+    }
+
+    .footer-caption{
+        display: none;
     }
 }
