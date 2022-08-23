@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     color: #d3d98b;
+    transition: 0.5s;
 }
 
 .heading {
@@ -21,7 +22,6 @@
 .navbar-links{
     z-index: 100;
     overflow-x: hidden;
-    transition: 0.5s;
     background: #181818;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .navbar-links li:hover {
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
     transform: translateY(-7.5px);
 }
 
 .navbar-links li:active {
-    transition-duration: 0.1s;
+    transition-duration: 0.25s;
     transform: translateY(0px);
 }
 
