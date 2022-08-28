@@ -42,41 +42,55 @@
 
     <div class="home-clock">
 
+        <div class="alarm-analog-clock">
+
+            <div class="alarm-analog-clock--hand alarm-analog-clock--hand-hour" data-hour-hand></div>
+            <div class="alarm-analog-clock--hand alarm-analog-clock--hand-minute" data-minute-hand></div>
+            <div class="alarm-analog-clock--hand alarm-analog-clock--hand-second" data-second-hand></div>
+            
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-1">1</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-2">2</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-3">3</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-4">4</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-5">5</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-6">6</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-7">7</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-8">8</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-9">9</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-10">10</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-11">11</div>
+            <div class="alarm-analog-clock--number alarm-analog-clock--number-12">12</div>
+    
+        </div>
+
         <div class="alarm-clock">
 
-        </div>
-        
-        <div class="digital-clock">
+            <div class="alarm">
 
-            <div class="digital">
+                <input class="alarm-input alarm-input-hour" type="number" placeholder="Hours" min="0" max="12">
+                <input class="alarm-input alarm-input-minute" type="number" placeholder="Minutes" min="0" max="60">
+                <input class="alarm-input alarm-input-second" type="number" placeholder="Second" min="0" max="60">
 
-                <span id="digital-clock--hours">00</span>
-                <span>:</span>
-        
-                <span id="digital-clock--minutes">00</span>
-                <span>:</span>
-        
-                <span id="digital-clock--seconds">00</span>
-                <span></span>
-        
-                <span id="digital-clock--session">Am</span>
-        
-                <div class="date">
-                    <span id="digital-clock--date">Date</span>
-                </div>
+                <select name="timeset" class="alarm-input">
 
-                <div class="footer-caption">
-                    <span>Made with ❤ by Eshan</span>
-                </div>
+                    <option class="alarm-input-dropdown" value="am">AM</option>
+                    <option class="alarm-input-dropdown" value="pm">PM</option>
+
+                </select>
 
             </div>
-        
+
+            <button class="alarm-input alarm-set">SET ALARM</button>
+
+            <div class="alarm-footer-caption">
+                <span>Made with ❤ by Eshan</span>
+            </div>
+
         </div>
 
     </div>
 
     <script src="static/analog.js"></script>
-    <script src="static/digital.js"></script>
     <script src="static/navbar.js"></script>
 
 </body>

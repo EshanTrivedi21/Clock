@@ -1,31 +1,255 @@
-.digital-clock-alarm {
-    font-size: 3.25vw;
-    text-align: center;
-    color: #d3d98b;
+.alarm-analog-clock{
+    display: flex;
     width: 30vw;
-    background-color: #1e5128;
-    padding: 0vw 1rem;
-    margin-top: 15rem;
-    border-radius: 15px;
-    letter-spacing: 2.5px;
-}
+    height: 30vw;
+    background-color: #d3d98b;
+    border-radius: 50%;
+    border: 1vw solid #1e5128;
+    position: relative;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-10%);
 
-@media (max-width: 1000px) {
-    .digital-clock-alarm  {
-        font-size: 2.25rem;
-        width: 50vw;
-        padding: 2vw;
-        margin-top: 5rem;
-        background-color: #1e5128;
+    &--number {
+        position: absolute;
+        width: 95%;
+        height: 95%;
+        left: 2.5%;
+        top: 2.5%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vw;
+        color: #141414;
+
+        &-1 { --rotation: 30deg;}
+        &-2 { --rotation: 60deg;}
+        &-3 { --rotation: 90deg;}
+        &-4 { --rotation: 120deg;}
+        &-5 { --rotation: 150deg;}
+        &-6 { --rotation: 180deg;}
+        &-7 { --rotation: 210deg;}
+        &-8 { --rotation: 2400deg;}
+        &-9 { --rotation: 270deg;}
+        &-10 { --rotation: 300deg;}
+        &-11 { --rotation: 330deg;}
+
+        transform: rotate(var(--rotation));
+    }
+
+    &--hand {
+        --rotation: 0deg;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        background-color: #141414;
+        border: 1.5px solid #141414;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        transform-origin: bottom;
+        transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+
+        &-hour {
+            width: 0.9vw;
+            height: 8vw;
+        }
+
+        &-minute {
+            width: 0.45vw;
+            height: 9.5vw;
+        }
+
+        &-second {
+            width: 0.1vw;
+            height: 10.5vw;
+            border: 1.5px solid #1e5128;
+            background-color: #1e5128;
+        }
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: #141414;
+        z-index: 25;
+        width: 1.5vw;
+        height: 1.5vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
     }
 }
 
-@media (max-width: 600px) {
-    .digital-clock-alarm  {
-        font-size: 1.75rem;
-        width: 85vw;
-        padding: 2.5vw;
-        margin-top: 5rem;
+.alarm{
+    display: flex;
+    margin-top: 6rem;
+
+    &-input {
+        height: 75px;
+        width: 6.75vw;
+        margin: 0.5vw;
+        border-radius: 10px;
+        border: 5px solid #1e5128;
+        background-color: #d3d98b;
+        outline: none;
+        padding-left: 17.5px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    &-set {
         background-color: #1e5128;
+        color: #d3d98b;
+        margin-top: 15px;
+        width: 30vw;
+        letter-spacing: 2px;
+        font-size: 35px;
+        font-weight: 600;
+        padding-left: 0px;
+    }
+}
+
+
+.alarm-footer-caption{
+    margin: 0.5vw;
+    margin-top: 50%;
+    transform: translateX(3.5vw);
+    font-size: 1.75vw;
+    color: #d3d98b;
+    letter-spacing: 2.5px;
+}
+
+
+@media (max-width: 1000px) {
+    .alarm-analog-clock {
+        width: 60vw;
+        height: 60vw;
+        border: 12.5px solid #1e5128;
+        margin-top: 5vh;
+        transform: translateX(0%);
+
+        &--number {
+            font-size: 4.5vw;
+        }
+
+        &--hand {
+            &-hour {
+                width: 1.75vw;
+                height: 15vw;
+            }
+    
+            &-minute {
+                width: 1vw;
+                height: 19vw;
+            }
+    
+            &-second {
+                width: 0.4vw;
+                height: 20vw;
+            }    
+        }
+
+        &::after {
+            width: 2.75vw;
+            height: 2.75vw;
+        }
+    }
+
+    .alarm{
+        margin-top: 7.5vh;
+    
+        &-input {
+            height: 5.5vh;
+            width: 13.55vw;
+            margin: 1vw;
+            border-radius: 7.5px;
+            border: 3.5px solid #1e5128;
+            padding-left: 12.4px;
+            font-size: 20px;
+
+            &-dropdown {
+                height: 5.5vh;
+                width: 18.5vw;
+            }
+        }
+    
+        &-set {
+            margin-top: 20px;
+            width: 60vw;
+            font-size: 30px;
+        }
+    }
+    
+    .alarm-footer-caption{
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .alarm-analog-clock {
+        width: 80vw;
+        height: 80vw;
+        border: 7px solid #1e5128;
+        margin-top: 5vh;
+        transform: translateX(0%);
+
+        &--number {
+            font-size: 6.5vw;
+        }
+
+        &--hand {
+            &-hour {
+                width: 2vw;
+                height: 22.5vw;
+            }
+    
+            &-minute {
+                width: 1.25vw;
+                height: 27.5vw;
+            }
+    
+            &-second {
+                width: 0.2vw;
+                height: 27.5vw;
+            }
+    
+        }
+
+        &::after {
+            width: 4vw;
+            height: 4vw;
+        }
+    }
+
+    .alarm{
+        margin-top: 7.5vh;
+    
+        &-input {
+            height: 5.5vh;
+            width: 18.5vw;
+            margin: 1vw;
+            border-radius: 5px;
+            border: 2.5px solid #1e5128;
+            padding-left: 5px;
+            font-size: 15px;
+
+            &-dropdown {
+                height: 5.5vh;
+                width: 18.5vw;
+            }
+        }
+    
+        &-set {
+            margin-top: 15px;
+            width: 80vw;
+            font-size: 20px;
+        }
+    }
+
+    .alarm-footer-caption{
+        display: none;
     }
 }
