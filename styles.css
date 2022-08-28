@@ -296,6 +296,10 @@
   color: #d3d98b;
   letter-spacing: 2.5px; }
 
+.disable {
+  opacity: 0.5;
+  pointer-events: none; }
+
 @media (max-width: 1000px) {
   .alarm {
     margin-top: 7.5vh; }
