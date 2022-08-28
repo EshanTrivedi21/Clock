@@ -73,8 +73,8 @@
         position: absolute;
         background-color: #141414;
         z-index: 25;
-        width: 20px;
-        height: 20px;
+        width: 1.25vw;
+        height: 1.25vw;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -111,6 +111,11 @@
             }
     
         }
+
+        &::after {
+            width: 2.5vw;
+            height: 2.5vw;
+        }
     }
 }
 
@@ -143,6 +148,11 @@
                 height: 31.5vw;
             }
     
+        }
+
+        &::after {
+            width: 4vw;
+            height: 4vw;
         }
     }
 }

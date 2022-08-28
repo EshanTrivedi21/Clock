@@ -1,10 +1,10 @@
-.alarm{
+.timer{
     display: flex;
     margin-top: 6rem;
 
     &-input {
         height: 75px;
-        width: 6.75vw;
+        width: 9.35vw;
         margin: 0.5vw;
         border-radius: 10px;
         border: 5px solid #1e5128;
@@ -28,7 +28,7 @@
 }
 
 
-.alarm-footer-caption{
+.timer-footer-caption{
     margin: 0.5vw;
     margin-top: 50%;
     transform: translateX(3.5vw);
@@ -39,17 +39,17 @@
 
 
 @media (max-width: 1000px) {
-    .alarm{
+    .timer{
         margin-top: 7.5vh;
     
         &-input {
             height: 6vh;
-            width: 11vw;
+            width: 15.5vw;
             margin: 1vw;
             border-radius: 7.5px;
             border: 3.5px solid #1e5128;
             padding-left: 12.4px;
-            font-size: 25px;
+            font-size: 30px;
         }
     
         &-set {
@@ -59,19 +59,19 @@
         }
     }
     
-    .alarm-footer-caption{
+    .timer-footer-caption{
         display: none;
     }
 }
 
 
 @media (max-width: 600px) {
-    .alarm{
+    .timer{
         margin-top: 7.5vh;
     
         &-input {
-            height: 6.5vh;
-            width: 19.8vw;
+            height: 7vh;
+            width: 27vw;
             margin: 1vw;
             border-radius: 5px;
             border: 2.5px solid #1e5128;
@@ -86,7 +86,7 @@
         }
     }
 
-    .alarm-footer-caption{
+    .timer-footer-caption{
         display: none;
     }
 }

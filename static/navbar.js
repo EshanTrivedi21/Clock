@@ -40,7 +40,7 @@ anchorAlarm.addEventListener (
 
 anchorTimer.addEventListener ( 
     'click' , function () {
-        // location.href = "timer.html";
+        location.href = "timer.html";
         document.querySelector(".caption").classList.add('hidden');
         reset();
     }  

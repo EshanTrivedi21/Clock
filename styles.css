@@ -71,8 +71,8 @@
     position: absolute;
     background-color: #141414;
     z-index: 25;
-    width: 20px;
-    height: 20px;
+    width: 1.25vw;
+    height: 1.25vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -95,7 +95,10 @@
       height: 14.25vw; }
     .analog-clock--hand-second {
       width: 0.3vw;
-      height: 16vw; } }
+      height: 16vw; }
+    .analog-clock::after {
+      width: 2.5vw;
+      height: 2.5vw; } }
 
 @media (max-width: 600px) {
   .analog-clock {
@@ -114,7 +117,10 @@
       height: 28.5vw; }
     .analog-clock--hand-second {
       width: 0.3vw;
-      height: 31.5vw; } }
+      height: 31.5vw; }
+    .analog-clock::after {
+      width: 4vw;
+      height: 4vw; } }
 
 .digital {
   font-size: 3.25vw;
@@ -122,9 +128,11 @@
   color: #d3d98b;
   width: 30vw;
   padding: 0vw 1rem;
-  margin-top: 10rem;
+  margin: 0.5vw;
+  margin-top: 6rem;
   border-radius: 15px;
-  letter-spacing: 2.5px; }
+  letter-spacing: 2.5px;
+  padding-left: 17.5px; }
 
 .footer-caption {
   margin-top: 15vw;
@@ -256,88 +264,9 @@
   .navbar-links.active {
     display: flex; } }
 
-.alarm-analog-clock {
-  display: flex;
-  width: 30vw;
-  height: 30vw;
-  background-color: #d3d98b;
-  border-radius: 50%;
-  border: 1vw solid #1e5128;
-  position: relative;
-  margin-top: 10vh;
-  justify-content: center;
-  align-items: center;
-  transform: translateX(-10%); }
-  .alarm-analog-clock--number {
-    position: absolute;
-    width: 95%;
-    height: 95%;
-    left: 2.5%;
-    top: 2.5%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2vw;
-    color: #141414;
-    transform: rotate(var(--rotation)); }
-    .alarm-analog-clock--number-1 {
-      --rotation: 30deg; }
-    .alarm-analog-clock--number-2 {
-      --rotation: 60deg; }
-    .alarm-analog-clock--number-3 {
-      --rotation: 90deg; }
-    .alarm-analog-clock--number-4 {
-      --rotation: 120deg; }
-    .alarm-analog-clock--number-5 {
-      --rotation: 150deg; }
-    .alarm-analog-clock--number-6 {
-      --rotation: 180deg; }
-    .alarm-analog-clock--number-7 {
-      --rotation: 210deg; }
-    .alarm-analog-clock--number-8 {
-      --rotation: 2400deg; }
-    .alarm-analog-clock--number-9 {
-      --rotation: 270deg; }
-    .alarm-analog-clock--number-10 {
-      --rotation: 300deg; }
-    .alarm-analog-clock--number-11 {
-      --rotation: 330deg; }
-  .alarm-analog-clock--hand {
-    --rotation: 0deg;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    background-color: #141414;
-    border: 1.5px solid #141414;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    transform-origin: bottom;
-    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg)); }
-    .alarm-analog-clock--hand-hour {
-      width: 0.9vw;
-      height: 8vw; }
-    .alarm-analog-clock--hand-minute {
-      width: 0.45vw;
-      height: 9.5vw; }
-    .alarm-analog-clock--hand-second {
-      width: 0.1vw;
-      height: 10.5vw;
-      border: 1.5px solid #1e5128;
-      background-color: #1e5128; }
-  .alarm-analog-clock::after {
-    content: '';
-    position: absolute;
-    background-color: #141414;
-    z-index: 25;
-    width: 1.5vw;
-    height: 1.5vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%; }
-
 .alarm {
   display: flex;
-  margin-top: 10rem; }
+  margin-top: 6rem; }
   .alarm-input {
     height: 75px;
     width: 6.75vw;
@@ -368,85 +297,107 @@
   letter-spacing: 2.5px; }
 
 @media (max-width: 1000px) {
-  .alarm-analog-clock {
-    width: 60vw;
-    height: 60vw;
-    border: 12.5px solid #1e5128;
-    margin-top: 5vh;
-    transform: translateX(0%); }
-    .alarm-analog-clock--number {
-      font-size: 4.5vw; }
-    .alarm-analog-clock--hand-hour {
-      width: 1.75vw;
-      height: 15vw; }
-    .alarm-analog-clock--hand-minute {
-      width: 1vw;
-      height: 19vw; }
-    .alarm-analog-clock--hand-second {
-      width: 0.4vw;
-      height: 20vw; }
-    .alarm-analog-clock::after {
-      width: 2.75vw;
-      height: 2.75vw; }
   .alarm {
     margin-top: 7.5vh; }
     .alarm-input {
-      height: 5.5vh;
-      width: 13.55vw;
+      height: 6vh;
+      width: 11vw;
       margin: 1vw;
       border-radius: 7.5px;
       border: 3.5px solid #1e5128;
       padding-left: 12.4px;
-      font-size: 20px; }
-      .alarm-input-dropdown {
-        height: 5.5vh;
-        width: 18.5vw; }
+      font-size: 25px; }
     .alarm-set {
       margin-top: 20px;
-      width: 60vw;
+      width: 50vw;
       font-size: 30px; }
   .alarm-footer-caption {
     display: none; } }
 
 @media (max-width: 600px) {
-  .alarm-analog-clock {
-    width: 80vw;
-    height: 80vw;
-    border: 7px solid #1e5128;
-    margin-top: 5vh;
-    transform: translateX(0%); }
-    .alarm-analog-clock--number {
-      font-size: 6.5vw; }
-    .alarm-analog-clock--hand-hour {
-      width: 2vw;
-      height: 22.5vw; }
-    .alarm-analog-clock--hand-minute {
-      width: 1.25vw;
-      height: 27.5vw; }
-    .alarm-analog-clock--hand-second {
-      width: 0.2vw;
-      height: 27.5vw; }
-    .alarm-analog-clock::after {
-      width: 4vw;
-      height: 4vw; }
   .alarm {
     margin-top: 7.5vh; }
     .alarm-input {
-      height: 5.5vh;
-      width: 18.5vw;
+      height: 6.5vh;
+      width: 19.8vw;
       margin: 1vw;
       border-radius: 5px;
       border: 2.5px solid #1e5128;
       padding-left: 5px;
-      font-size: 15px; }
-      .alarm-input-dropdown {
-        height: 5.5vh;
-        width: 18.5vw; }
+      font-size: 20px; }
     .alarm-set {
       margin-top: 15px;
-      width: 80vw;
+      width: 85vw;
       font-size: 20px; }
   .alarm-footer-caption {
+    display: none; } }
+
+.timer {
+  display: flex;
+  margin-top: 6rem; }
+  .timer-input {
+    height: 75px;
+    width: 9.35vw;
+    margin: 0.5vw;
+    border-radius: 10px;
+    border: 5px solid #1e5128;
+    background-color: #d3d98b;
+    outline: none;
+    padding-left: 17.5px;
+    font-size: 35px;
+    font-weight: 600; }
+  .timer-set {
+    background-color: #1e5128;
+    color: #d3d98b;
+    margin-top: 15px;
+    width: 30vw;
+    letter-spacing: 2px;
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 0px; }
+
+.timer-footer-caption {
+  margin: 0.5vw;
+  margin-top: 50%;
+  transform: translateX(3.5vw);
+  font-size: 1.75vw;
+  color: #d3d98b;
+  letter-spacing: 2.5px; }
+
+@media (max-width: 1000px) {
+  .timer {
+    margin-top: 7.5vh; }
+    .timer-input {
+      height: 6vh;
+      width: 15.5vw;
+      margin: 1vw;
+      border-radius: 7.5px;
+      border: 3.5px solid #1e5128;
+      padding-left: 12.4px;
+      font-size: 30px; }
+    .timer-set {
+      margin-top: 20px;
+      width: 50vw;
+      font-size: 30px; }
+  .timer-footer-caption {
+    display: none; } }
+
+@media (max-width: 600px) {
+  .timer {
+    margin-top: 7.5vh; }
+    .timer-input {
+      height: 7vh;
+      width: 27vw;
+      margin: 1vw;
+      border-radius: 5px;
+      border: 2.5px solid #1e5128;
+      padding-left: 5px;
+      font-size: 20px; }
+    .timer-set {
+      margin-top: 15px;
+      width: 85vw;
+      font-size: 20px; }
+  .timer-footer-caption {
     display: none; } }
 
 * {
