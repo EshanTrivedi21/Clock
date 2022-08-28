@@ -122,7 +122,7 @@
   color: #d3d98b;
   width: 30vw;
   padding: 0vw 1rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   border-radius: 15px;
   letter-spacing: 2.5px; }
 
@@ -142,7 +142,7 @@
     font-size: 2.25rem;
     width: 50vw;
     padding: 2vw;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     background-color: #1e5128; }
   .date {
     margin-top: 0rem;
@@ -155,7 +155,7 @@
     font-size: 1.75rem;
     width: 85vw;
     padding: 2.5vw;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     background-color: #1e5128; }
   .date {
     margin-top: 0rem;
@@ -337,7 +337,7 @@
 
 .alarm {
   display: flex;
-  margin-top: 6rem; }
+  margin-top: 10rem; }
   .alarm-input {
     height: 75px;
     width: 6.75vw;
@@ -347,7 +347,7 @@
     background-color: #d3d98b;
     outline: none;
     padding-left: 17.5px;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600; }
   .alarm-set {
     background-color: #1e5128;
