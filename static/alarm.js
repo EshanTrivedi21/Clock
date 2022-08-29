@@ -41,7 +41,6 @@ setInterval(() => {
 
     
     let currentTime = `${hours}:${minutes}:${seconds} ${timeset}`;
-    console.log(currentTime);
     
     if (currentTime == alarmTime) {
         
@@ -65,6 +64,7 @@ function setAlarm () {
 
     alarmTime = setTime;
     isAlarmSet = true;
+
     disable.classList.add("disable");
     set.innerText = "DISMISS ALARM";
 
