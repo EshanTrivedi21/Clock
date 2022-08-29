@@ -7,7 +7,7 @@
   border-radius: 50%;
   border: 1vw solid #1e5128;
   position: relative;
-  margin-top: 5vh;
+  margin-top: 1vh;
   justify-content: center;
   align-items: center; }
   .analog-clock--number {
@@ -104,8 +104,7 @@
     width: 85vw;
     height: 85vw;
     border: 10px solid #1e5128;
-    margin-top: 3vh;
-    transform: translateX(0%); }
+    margin-top: 2vh; }
     .analog-clock--number {
       font-size: 6vw; }
     .analog-clock--hand-hour {
@@ -264,18 +263,11 @@
 
 .alarm {
   display: flex;
-  margin-top: 6rem; }
-  .alarm-digital {
-    margin-top: 10rem;
-    width: 32vw;
-    padding: 1.25vw 1.25rem;
-    font-size: 3vw; }
-  .alarm-date {
-    font-size: 1.75vw; }
+  margin-top: 4rem; }
   .alarm-input {
     height: 90px;
-    width: 7.25vw;
-    margin: 0.5vw;
+    width: 6vw;
+    margin: 0.35vw;
     border-radius: 10px;
     border: 5px solid #1e5128;
     background-color: #d3d98b;
@@ -286,20 +278,12 @@
   .alarm-set {
     background-color: #1e5128;
     color: #d3d98b;
-    margin-top: 25px;
-    width: 32vw;
+    margin-top: 10px;
+    width: 26vw;
     letter-spacing: 2px;
     font-size: 40px;
     font-weight: 600;
     padding-left: 0px; }
-
-.alarm-footer-caption {
-  margin: 0.5vw;
-  margin-top: 50%;
-  transform: translateX(3.5vw);
-  font-size: 1.75vw;
-  color: #d3d98b;
-  letter-spacing: 2.5px; }
 
 .disable {
   opacity: 0.5;
@@ -307,14 +291,7 @@
 
 @media (max-width: 1000px) {
   .alarm {
-    margin-top: 7.5vh; }
-    .alarm-digital {
-      margin-top: 7rem;
-      width: 50vw;
-      padding: 1.5vw 1.5rem;
-      font-size: 32.5px; }
-    .alarm-date {
-      font-size: 20px; }
+    margin-top: 5vh; }
     .alarm-input {
       height: 6vh;
       width: 11vw;
@@ -324,24 +301,15 @@
       padding-left: 12.4px;
       font-size: 25px; }
     .alarm-set {
-      margin-top: 20px;
+      margin-top: 10px;
       width: 50vw;
-      font-size: 30px; }
-  .alarm-footer-caption {
-    display: none; } }
+      font-size: 30px; } }
 
 @media (max-width: 600px) {
   .alarm {
-    margin-top: 10vh; }
-    .alarm-digital {
-      margin-top: 7rem;
-      width: 85vw;
-      padding: 1.5vw 1.5rem;
-      font-size: 32.5px; }
-    .alarm-date {
-      font-size: 20px; }
+    margin-top: 5vh; }
     .alarm-input {
-      height: 7.5vh;
+      height: 6.8vh;
       width: 19.8vw;
       margin: 1vw;
       border-radius: 5px;
@@ -349,26 +317,17 @@
       padding-left: 5px;
       font-size: 22.5px; }
     .alarm-set {
-      margin-top: 15px;
+      margin-top: 10px;
       width: 85vw;
-      font-size: 22.5px; }
-  .alarm-footer-caption {
-    display: none; } }
+      font-size: 22.5px; } }
 
 .timer {
   display: flex;
-  margin-top: 6rem; }
-  .timer-digital {
-    margin-top: 10rem;
-    width: 32vw;
-    padding: 1.25vw 1.25rem;
-    font-size: 3vw; }
-  .timer-date {
-    font-size: 1.75vw; }
+  margin-top: 4rem; }
   .timer-input {
     height: 90px;
-    width: 10vw;
-    margin: 0.5vw;
+    width: 8.2vw;
+    margin: 0.35vw;
     border-radius: 10px;
     border: 5px solid #1e5128;
     background-color: #d3d98b;
@@ -379,20 +338,12 @@
   .timer-set {
     background-color: #1e5128;
     color: #d3d98b;
-    margin-top: 25px;
-    width: 32vw;
+    margin-top: 10px;
+    width: 26vw;
     letter-spacing: 2px;
     font-size: 40px;
     font-weight: 600;
     padding-left: 0px; }
-
-.timer-footer-caption {
-  margin: 0.5vw;
-  margin-top: 50%;
-  transform: translateX(3.5vw);
-  font-size: 1.75vw;
-  color: #d3d98b;
-  letter-spacing: 2.5px; }
 
 .disable {
   opacity: 0.5;
@@ -400,14 +351,7 @@
 
 @media (max-width: 1000px) {
   .timer {
-    margin-top: 7.5vh; }
-    .timer-digital {
-      margin-top: 7rem;
-      width: 50vw;
-      padding: 1.5vw 1.5rem;
-      font-size: 32.5px; }
-    .timer-date {
-      font-size: 20px; }
+    margin-top: 5vh; }
     .timer-input {
       height: 6vh;
       width: 15.5vw;
@@ -417,24 +361,15 @@
       padding-left: 12.4px;
       font-size: 25px; }
     .timer-set {
-      margin-top: 20px;
+      margin-top: 10px;
       width: 50vw;
-      font-size: 30px; }
-  .timer-footer-caption {
-    display: none; } }
+      font-size: 30px; } }
 
 @media (max-width: 600px) {
   .timer {
-    margin-top: 10vh; }
-    .timer-digital {
-      margin-top: 7rem;
-      width: 85vw;
-      padding: 1.5vw 1.5rem;
-      font-size: 32.5px; }
-    .timer-date {
-      font-size: 20px; }
+    margin-top: 5vh; }
     .timer-input {
-      height: 7vh;
+      height: 6.8vh;
       width: 27vw;
       margin: 1vw;
       border-radius: 5px;
@@ -442,11 +377,95 @@
       padding-left: 5px;
       font-size: 22.5px; }
     .timer-set {
-      margin-top: 15px;
+      margin-top: 10px;
       width: 85vw;
-      font-size: 22.5px; }
-  .timer-footer-caption {
-    display: none; } }
+      font-size: 22.5px; } }
+
+.stopwatch {
+  margin-top: 4rem; }
+  .stopwatch-display {
+    display: flex; }
+  .stopwatch-output {
+    height: 5vh;
+    width: 6.75vw;
+    margin: 0.5vw;
+    border-radius: 5px;
+    background-color: #d3d98b;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600; }
+  .stopwatch-buttons {
+    margin-top: 3vw; }
+  .stopwatch-button {
+    height: 6.8vh;
+    width: 14.5vw;
+    margin: 0.4vw;
+    border-radius: 5px;
+    background-color: #1e5128;
+    color: #d3d98b;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center; }
+  .stopwatch-resetButton {
+    margin-top: 1vw;
+    width: 30vw; }
+  .stopwatch-lap {
+    display: flex;
+    justify-content: space-between;
+    width: 30vw;
+    margin: 0.5vw;
+    margin-top: 3vw;
+    color: #d3d98b;
+    font-size: 32.5px;
+    font-weight: 600;
+    letter-spacing: 2.5px; }
+
+@media (max-width: 1000px) {
+  .stopwatch-output {
+    height: 6.8vh;
+    width: 13.7vw;
+    margin: 1vw;
+    font-size: 30px;
+    padding-top: 1.5vh; }
+  .stopwatch-buttons {
+    margin-top: 10vw; }
+  .stopwatch-button {
+    height: 6.8vh;
+    width: 29vw;
+    margin: 1vw;
+    font-size: 30px;
+    text-align: center; }
+  .stopwatch-resetButton {
+    margin-top: 3vw;
+    width: 60vw; }
+  .stopwatch-lap {
+    width: 60vw;
+    margin: 1vw;
+    margin-top: 10vw;
+    font-size: 20px; } }
+
+@media (max-width: 600px) {
+  .stopwatch-output {
+    height: 6.8vh;
+    width: 19.8vw;
+    margin: 1vw;
+    font-size: 30px; }
+  .stopwatch-buttons {
+    margin-top: 10vw; }
+  .stopwatch-button {
+    height: 6.8vh;
+    width: 41vw;
+    margin: 1vw;
+    font-size: 30px;
+    text-align: center; }
+  .stopwatch-resetButton {
+    margin-top: 3vw;
+    width: 85vw; }
+  .stopwatch-lap {
+    width: 85vw;
+    margin: 1vw;
+    margin-top: 10vw;
+    font-size: 20px; } }
 
 * {
   margin: 0;

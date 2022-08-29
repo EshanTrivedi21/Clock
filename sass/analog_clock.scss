@@ -6,7 +6,7 @@
     border-radius: 50%;
     border: 1vw solid #1e5128;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 1vh;
     justify-content: center;
     align-items: center;
 
@@ -124,8 +124,7 @@
         width: 85vw;
         height: 85vw;
         border: 10px solid #1e5128;
-        margin-top: 3vh;
-        transform: translateX(0%);
+        margin-top: 2vh;
 
         &--number {
             font-size: 6vw;

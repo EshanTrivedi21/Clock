@@ -48,7 +48,7 @@ anchorTimer.addEventListener (
 
 anchorStopwatch.addEventListener ( 
     'click' , function () {
-        // location.href = "stopwatch.html";
+        location.href = "stopwatch.html";
         document.querySelector(".caption").classList.add('hidden');
         reset();
     }  

@@ -1,0 +1,125 @@
+.stopwatch {
+    margin-top: 4rem;
+
+    &-display {
+        display: flex;
+    }
+
+    &-output {
+        height: 5vh;
+        width: 6.75vw;
+        margin: 0.5vw;
+        border-radius: 5px;
+        background-color: #d3d98b;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    &-buttons {
+        margin-top: 3vw;
+    }
+
+    &-button {
+        height: 6.8vh;
+        width: 14.5vw;
+        margin: 0.4vw;
+        border-radius: 5px;
+        background-color: #1e5128;
+        color: #d3d98b;
+        font-size: 38px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &-resetButton {
+        margin-top: 1vw;
+        width: 30vw;
+    }
+
+    &-lap {
+        display: flex;
+        justify-content: space-between;
+        width: 30vw;
+        margin: 0.5vw;
+        margin-top: 3vw;
+        color: #d3d98b;
+        font-size: 32.5px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .stopwatch {
+    
+        &-output {
+            height: 6.8vh;
+            width: 13.7vw;
+            margin: 1vw;
+            font-size: 30px;
+            padding-top: 1.5vh;
+        }
+    
+        &-buttons {
+            margin-top: 10vw;
+        }
+    
+        &-button {
+            height: 6.8vh;
+            width: 29vw;
+            margin: 1vw;
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        &-resetButton {
+            margin-top: 3vw;
+            width: 60vw;
+        }
+    
+        &-lap {
+            width: 60vw;
+            margin: 1vw;
+            margin-top: 10vw;
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .stopwatch {
+    
+        &-output {
+            height: 6.8vh;
+            width: 19.8vw;
+            margin: 1vw;
+            font-size: 30px;
+        }
+    
+        &-buttons {
+            margin-top: 10vw;
+        }
+    
+        &-button {
+            height: 6.8vh;
+            width: 41vw;
+            margin: 1vw;
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        &-resetButton {
+            margin-top: 3vw;
+            width: 85vw;
+        }
+    
+        &-lap {
+            width: 85vw;
+            margin: 1vw;
+            margin-top: 10vw;
+            font-size: 20px;
+        }
+    }
+}
