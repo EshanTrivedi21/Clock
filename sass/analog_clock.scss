@@ -1,15 +1,14 @@
 .analog-clock{
     display: flex;
-    width: 30vw;
-    height: 30vw;
+    width: 26vw;
+    height: 26vw;
     background-color: #d3d98b;
     border-radius: 50%;
     border: 1vw solid #1e5128;
     position: relative;
-    margin-top: 10vh;
+    margin-top: 5vh;
     justify-content: center;
     align-items: center;
-    transform: translateX(-10%);
 
     &--number {
         position: absolute;
@@ -50,18 +49,18 @@
         transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
 
         &-hour {
-            width: 0.9vw;
-            height: 8vw;
+            width: 0.8vw;
+            height: 7vw;
         }
 
         &-minute {
-            width: 0.45vw;
-            height: 9.5vw;
+            width: 0.4vw;
+            height: 8.5vw;
         }
 
         &-second {
             width: 0.1vw;
-            height: 10.5vw;
+            height: 9vw;
             border: 1.5px solid #1e5128;
             background-color: #1e5128;
         }

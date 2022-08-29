@@ -42,24 +42,26 @@
 
     <div class="home-clock">
 
-        <div class="analog-clock">
+        <div class="digital-clock alarm-digital-clock">
 
-            <div class="analog-clock--hand analog-clock--hand-hour" data-hour-hand></div>
-            <div class="analog-clock--hand analog-clock--hand-minute" data-minute-hand></div>
-            <div class="analog-clock--hand analog-clock--hand-second" data-second-hand></div>
-            
-            <div class="analog-clock--number analog-clock--number-1">1</div>
-            <div class="analog-clock--number analog-clock--number-2">2</div>
-            <div class="analog-clock--number analog-clock--number-3">3</div>
-            <div class="analog-clock--number analog-clock--number-4">4</div>
-            <div class="analog-clock--number analog-clock--number-5">5</div>
-            <div class="analog-clock--number analog-clock--number-6">6</div>
-            <div class="analog-clock--number analog-clock--number-7">7</div>
-            <div class="analog-clock--number analog-clock--number-8">8</div>
-            <div class="analog-clock--number analog-clock--number-9">9</div>
-            <div class="analog-clock--number analog-clock--number-10">10</div>
-            <div class="analog-clock--number analog-clock--number-11">11</div>
-            <div class="analog-clock--number analog-clock--number-12">12</div>
+            <div class="digital alarm-digital">
+
+                <span id="digital-clock--hours">00</span>
+                <span>:</span>
+        
+                <span id="digital-clock--minutes">00</span>
+                <span>:</span>
+        
+                <span id="digital-clock--seconds">00</span>
+                <span></span>
+        
+                <span id="digital-clock--session">Am</span>
+        
+                <div class="date alarm-date">
+                    <span id="digital-clock--date">Date</span>
+                </div>
+
+            </div>
     
         </div>
 
@@ -226,15 +228,12 @@
 
             <button class="alarm-input alarm-set">SET ALARM</button>
 
-            <div class="alarm-footer-caption">
-                <span>Made with ❤ by Eshan</span>
-            </div>
 
         </div>
 
     </div>
 
-    <script src="static/analog.js"></script>
+    <script src="static/digital.js"></script>
     <script src="static/navbar.js"></script>
     <script src="static/alarm.js"></script>
 
