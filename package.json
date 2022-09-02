@@ -4,7 +4,7 @@
   "description": "A simple Modern-Day Clock",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"node-sass sass/main.scss styles.css -wnpm ",
+    "compile:sass": "node-sass sass/main.scss styles.css -wnpm ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/EshanTrivedi21/Clock#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "luxon": "^3.0.3"
   }
 }

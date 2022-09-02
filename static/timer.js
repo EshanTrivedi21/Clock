@@ -13,56 +13,53 @@ let ringtone = new Audio("assets/ringtone.mp3");
 
 let setMiliSeconds;
 
-setInterval(() => {
+function time() {
+
     let dateTime =  new Date();
 
     let hours =  dateTime.getHours();
     let minutes = dateTime.getMinutes();
     let seconds = dateTime.getSeconds();
 
-    if ( hours >= 12 ) {
-        hours = hours - 12;
-        timeset = 'Pm';
-    } else {
-        timeset = 'Am';
+    targetHours = Number(hours) + Number(setHours.value);
+    targetMinutes = Number(minutes) + Number(setMinutes.value);
+    targetSeconds = Number(seconds) + Number(setSeconds.value);
+
+    const x = setInterval(() => {
+        let dateTime =  new Date();
+
+        let currentHours =  dateTime.getHours();
+        let currentMinutes = dateTime.getMinutes();
+        let currentSeconds = dateTime.getSeconds();
+
+        let remainingHours = targetHours - currentHours;
+        let remainingMinutes = targetMinutes - currentMinutes;
+        let remainingSeconds = targetSeconds - currentSeconds;
+        
+        let remainingTime = `${remainingHours} : ${remainingMinutes} : ${remainingSeconds}`;
+        console.log(remainingTime);
+
+        if (remainingTime == '0 : 0 : 0') {
+            ringtone.play();
+            ringtone.loop = true;
+            clearInterval(x);
+        }
+
+        if (remainingHours < 0 && remainingMinutes < 0 && remainingSeconds < 0) {clearInterval(x)};
+
+        remainingSeconds < 10 ? remainingSeconds = "0" + `${remainingSeconds}`: remainingSeconds;
+
+    }, 1000);
+    
+    if (isTimerSet) {
+        ringtone.pause();
+        disable.classList.remove("disable");
+        set.innerText = "START TIMER";
+        return isTimerSet = false;
     }
 
-    if ( seconds <= 9 ) {
-        seconds = "0" + `${seconds}`;
-    } 
-
-    if ( minutes <= 9 ) {
-        minutes = "0" + `${minutes}`;
-    } 
-
-    if ( hours <= 9 ) {
-        hours = "0" + `${hours}`;
-    } 
-
-    setMiliSeconds = Number(setSeconds.value)*1000;
-
-    // ringtone.play();
-    // ringtone.loop = true
-
-    set.addEventListener(
-        'click', function () {
-            setTimeout (setTimer, setMiliSeconds);
-            function setTimer () {
-
-                if (isTimerSet) {
-                    ringtone.pause();
-                    disable.classList.remove("disable");
-                    set.innerText = "START TIMER";
-                    return isTimerSet = false;
-                }
-
-                disable.classList.add("disable");
-                set.innerText = "DISMISS TIMER";
-
-                isTimerSet = true;
-
-            }
-        }
-    )
-
-});
+    isTimerSet = true;
+    disable.classList.add("disable");
+    set.innerText = "DISMISS ALARM";
+    
+}

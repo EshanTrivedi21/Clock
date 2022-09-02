@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@900&display=swap");
 .analog-clock {
   display: flex;
   width: 26vw;
@@ -466,6 +467,82 @@
     margin: 1vw;
     margin-top: 10vw;
     font-size: 20px; } }
+
+.worldclock {
+  margin-top: 3rem; }
+  .worldclock-spansearch {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    margin-left: 2.5vw; }
+    .worldclock-spansearch-search {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #d3d98b;
+      outline: none;
+      font-size: 15px;
+      letter-spacing: 2.5px;
+      width: 80vw; }
+    .worldclock-spansearch-button {
+      padding: 10px;
+      background-color: #1e5128;
+      color: #d3d98b;
+      border-radius: 5px;
+      width: 13vw;
+      font-size: 25px;
+      text-align: center; }
+  .worldclock-spandisplay {
+    display: flex;
+    justify-content: space-between;
+    width: 95vw;
+    margin-top: 2.5rem;
+    margin-left: 2.5vw;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1e5128;
+    color: #d3d98b;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2.5px; }
+  .worldclock-error {
+    width: 85vw;
+    height: 75vw;
+    margin: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -30%);
+    background-color: #1e5128;
+    color: #d3d98b;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2.5px; }
+    .worldclock-error-404 {
+      font-size: 100px;
+      font-weight: 100;
+      position: absolute;
+      left: 22.5%;
+      top: 17.5%;
+      font-family: 'Aboreto', cursive; }
+    .worldclock-error-title {
+      font-size: 25px;
+      border-radius: 7.5px;
+      padding: 5px;
+      color: #d3d98b;
+      position: absolute;
+      left: 22%;
+      top: 10%;
+      font-weight: 800;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 24px; }
+    .worldclock-error-message {
+      font-size: 15px;
+      padding: 18px;
+      position: absolute;
+      left: 0%;
+      top: 60%;
+      text-align: center; }
+
+.hidden {
+  display: none; }
 
 * {
   margin: 0;

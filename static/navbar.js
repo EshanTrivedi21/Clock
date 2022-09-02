@@ -56,7 +56,7 @@ anchorStopwatch.addEventListener (
 
 anchorWorldClock.addEventListener ( 
     'click' , function () {
-        // location.href = "worldclock.html";
+        location.href = "worldclock.html";
         document.querySelector(".caption").classList.add('hidden');
         reset();
     }  
