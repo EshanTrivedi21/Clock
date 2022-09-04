@@ -51,22 +51,62 @@
 
         </div>
 
+        <div class="digital-clock">
+
+            <div class="worldclock-digital digital">
+
+                <h3 class="worldclock-digital-title">Current Timezone</h3>
+    
+                <span id="digital-clock--hours">00</span>
+                <span>:</span>
+        
+                <span id="digital-clock--minutes">00</span>
+                <span>:</span>
+        
+                <span id="digital-clock--seconds">00</span>
+                <span></span>
+        
+                <span id="digital-clock--session">Am</span>
+        
+                <div class="worldclock-digital-date date">
+                    <span id="digital-clock--date">Date</span>
+                </div>
+    
+            </div>
+    
+        </div>
+
         <div class="worldclock-spandisplay hidden">
 
-            <span class="worldclock-spandisplay-text">Mumbai</span>
-            <span class="worldclock-spandisplay-time">00:00:00</span>
+            <h1 class="worldclock-spandisplay-title">Timezone</h1>
+            
+            <span id="worldclock-spandisplay--hours">00</span>
+            <span>:</span>
+    
+            <span id="worldclock-spandisplay--minutes">00</span>
+            <span>:</span>
+    
+            <span id="worldclock-spandisplay--seconds">00</span>
+            <span></span>
+    
+            <span id="worldclock-spandisplay--session">Am</span>
+
+            <div class="worldclock-spandisplay-date date">
+                <span id="digital-clock--date">Date</span>
+            </div>
 
         </div>
 
         <div class="worldclock-error hidden">
-            <span class="worldclock-error-404">404</span>
             <span class="worldclock-error-title">ERROR</span>
+            <span class="worldclock-error-404">404</span>
             <p class="worldclock-error-message">The Timezone you searched for doesn't Exist.</p>
         </div>
 
     </div>
 
     <script src="https://moment.github.io/luxon/global/luxon.js"></script>
+    <script src="static/digital.js"></script>
     <script src="static/navbar.js"></script>
     <script src="static/worldclock.js"></script>
 

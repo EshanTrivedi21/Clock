@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@900&display=swap");
 .analog-clock {
   display: flex;
   width: 26vw;
@@ -132,10 +131,6 @@
   letter-spacing: 2.5px;
   background-color: #1e5128; }
 
-.footer-caption {
-  margin-top: 15vw;
-  font-size: 1.75vw; }
-
 .date {
   margin-top: 0rem;
   display: flex;
@@ -152,9 +147,7 @@
     background-color: #1e5128; }
   .date {
     margin-top: 0rem;
-    font-size: 1.5rem; }
-  .footer-caption {
-    display: none; } }
+    font-size: 1.5rem; } }
 
 @media (max-width: 600px) {
   .digital {
@@ -165,9 +158,7 @@
     background-color: #1e5128; }
   .date {
     margin-top: 0rem;
-    font-size: 1.25rem; }
-  .footer-caption {
-    display: none; } }
+    font-size: 1.25rem; } }
 
 .title {
   margin: 1.5rem;
@@ -469,12 +460,15 @@
     font-size: 20px; } }
 
 .worldclock {
-  margin-top: 3rem; }
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .worldclock-spansearch {
     display: flex;
     justify-content: space-between;
-    width: 95vw;
-    margin-left: 2.5vw; }
+    width: 90vw; }
     .worldclock-spansearch-search {
       padding: 10px;
       border-radius: 5px;
@@ -482,63 +476,81 @@
       outline: none;
       font-size: 15px;
       letter-spacing: 2.5px;
-      width: 80vw; }
+      width: 72.5vw; }
     .worldclock-spansearch-button {
-      padding: 10px;
+      padding: 15px;
       background-color: #1e5128;
       color: #d3d98b;
       border-radius: 5px;
-      width: 13vw;
+      width: 15vw;
       font-size: 25px;
       text-align: center; }
+  .worldclock-digital {
+    font-size: 2rem;
+    width: 90vw;
+    padding: 2.5vw;
+    margin-top: 3rem;
+    background-color: #1e5128;
+    text-align: center;
+    color: #d3d98b;
+    border-radius: 15px;
+    letter-spacing: 2.5px;
+    background-color: #1e5128; }
+    .worldclock-digital-title {
+      font-size: 1.75rem;
+      margin-bottom: 10%;
+      padding-top: 0.5rem; }
+    .worldclock-digital-date {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      letter-spacing: 0px; }
   .worldclock-spandisplay {
-    display: flex;
-    justify-content: space-between;
-    width: 95vw;
-    margin-top: 2.5rem;
-    margin-left: 2.5vw;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 2rem;
+    width: 90vw;
+    padding: 2.5vw;
+    margin-top: 1rem;
     background-color: #1e5128;
+    text-align: center;
     color: #d3d98b;
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: 2.5px; }
+    border-radius: 15px;
+    letter-spacing: 2.5px;
+    background-color: #1e5128; }
+    .worldclock-spandisplay-title {
+      font-size: 1.75rem;
+      margin-bottom: 10%;
+      padding-top: 0.5rem; }
+    .worldclock-spandisplay-date {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      letter-spacing: 0px; }
   .worldclock-error {
-    width: 85vw;
-    height: 75vw;
-    margin: 50%;
+    width: 90vw;
     border-radius: 10px;
-    transform: translate(-50%, -30%);
     background-color: #1e5128;
     color: #d3d98b;
     font-size: 25px;
     font-weight: 600;
-    letter-spacing: 2.5px; }
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem; }
     .worldclock-error-404 {
-      font-size: 100px;
-      font-weight: 100;
-      position: absolute;
-      left: 22.5%;
-      top: 17.5%;
-      font-family: 'Aboreto', cursive; }
+      font-size: 1.75rem;
+      letter-spacing: 10px; }
     .worldclock-error-title {
-      font-size: 25px;
+      font-size: 1.75rem;
       border-radius: 7.5px;
       padding: 5px;
       color: #d3d98b;
-      position: absolute;
-      left: 22%;
-      top: 10%;
       font-weight: 800;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 24px; }
+      letter-spacing: 10px; }
     .worldclock-error-message {
-      font-size: 15px;
-      padding: 18px;
-      position: absolute;
-      left: 0%;
-      top: 60%;
+      font-size: 1.05rem;
+      padding: 25px 15px;
       text-align: center; }
 
 .hidden {

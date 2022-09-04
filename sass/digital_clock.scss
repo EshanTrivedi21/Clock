@@ -10,11 +10,6 @@
     background-color: #1e5128;
 }
 
-.footer-caption{
-    margin-top: 15vw;
-    font-size: 1.75vw;
-}
-
 .date {
     margin-top: 0rem;
     display: flex;
@@ -36,10 +31,6 @@
         margin-top: 0rem;
         font-size: 1.5rem;
     }
-
-    .footer-caption{
-        display: none;
-    }
 }
 
 @media (max-width: 600px) {
@@ -54,9 +45,5 @@
     .date {
         margin-top: 0rem;
         font-size: 1.25rem;
-    }
-
-    .footer-caption{
-        display: none;
     }
 }
