@@ -11,6 +11,7 @@
 + ### Stopwatch Output CSS.
 + ### Timer UI and Functionality.
 + ### A good Readme that describes the Clock Project.
++ ### Other Contributions are welcomed as well.
 
 ---
 
